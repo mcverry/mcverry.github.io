@@ -1,20 +1,25 @@
----
-layout: default
----
+<style> 
+    #header {
+        height:45px;
+        width:100%;
+        background:#050505;
+        border-bottom: 3px solid #CCC
+    }
+</style> 
 
-<div class="home">
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<header>
+    <div id="header"> 
+        <a href="http://ryanmcverry.com">Ryan McVerry</a>
+        Topics:
+        <a href="http://ryanmcverry.com/blog/improv">improv</a>
+        <a href="http://ryanmcverry.com/blog/code">code</a>
+        <a href="http://ryanmcverry.com/blog/ikebana">ikebana</a>
+        <a href="http://ryanmcverry.com/blog/running">running</a>
+        
+        <div id="right"> 
+            <a href="http://ryanmcverry.com/project/starlet">Starlet</a> 
+            <a href="https://www.tumblr.com/blog/fountainsofnyc">Fountains of New York</a>
+        </div>     
+    </div> 
+</header>
