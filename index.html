@@ -1,6 +1,10 @@
 <htmL>
 <head>
     <link rel="import" href="/header.html"> 
+
+    <style>
+        #body{}
+    </style>
 </head>
 <body>
 
@@ -29,7 +33,7 @@
     var post = link.import.querySelector('#header');
 
     var container = document.querySelector('body');
-    container.appendChild(post.cloneNode(true));
+    container.insertBefore(post.cloneNode(true), container.querySelector('copy'));
 </script>
 
 </body>
