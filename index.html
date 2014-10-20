@@ -22,5 +22,15 @@
     </h3>
 </div>
 
+<script>
+
+    // Bring in the import content.
+    var link = document.querySelector('link[rel="import"]');
+    var post = link.import.querySelector('#header');
+
+    var container = document.querySelector('#container');
+    container.appendChild(post.cloneNode(true));
+</script>
+
 </body>
 </html>
