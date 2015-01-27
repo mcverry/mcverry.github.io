@@ -10,31 +10,16 @@
             bottom:20%;
             margin-left:50px;
             font-size:16px;
-            color:#FFF;
+            color:#000;
         }
 
         #nav {
             font-size:32px;
         }
-
-        
-        #bg-container {
-            position:absolute;
-            width:100%; 
-            bottom:0%;
-            z-index:-10;
-            overflow:hidden;
-        }
         body {
-            background-color:#ff8f79;
+            background-color:#ededed;
         }
-        #bg {
-            min-width:640px;
-            height:100%;
-            z-index:inherit;
-            -webkit-filter: grayscale(100%); filter: grayscale(100%);
-        }
-    </style>
+   </style>
 </head>
 <body>
 
@@ -67,10 +52,5 @@
     var container = document.querySelector('body');
     container.insertBefore(post.cloneNode(true), container.querySelector('#content'));
 </script>
-
-<div id="bg-container">
-    <img id="bg" src="https://farm6.staticflickr.com/5187/5863114381_53b95aeaae_b.jpg"/>
-</div> 
-
 </body>
 </html>
